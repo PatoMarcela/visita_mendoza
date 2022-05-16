@@ -117,6 +117,10 @@ ul {
     color: #500805;
 }
 
+.grid__img:hover {
+    transform: scale (1.2);
+}
+
 .grid__titulo__favoritos {
     grid-area: titulof;
     display:flex;
@@ -131,10 +135,18 @@ ul {
     background-image: url("../recursos/puente_de_inca.jpg");
 }
 
+.grid__uno:hover{
+    transform: scale(1.1);
+}
+
 .grid__dos {
     grid-area: dos;
     display:flex;
-    background-image: url("../recursos/cerro_de_la_gloria.jpg"); 
+    background-image: url("../recursos/cerro_de_la_gloria.jpg");
+}
+
+.grid__dos:hover{
+    transform: scale(1.1);
 }
 
 .grid__tres {
@@ -143,16 +155,28 @@ ul {
     background-image: url("../recursos/vinedos.jpg");
 }
 
+.grid__tres:hover{
+    transform: scale(1.1);
+}
+
 .grid__cuatro {
     grid-area: cuatro;
     display:flex;
     background-image: url("../recursos/fuente_continentes.jpg");
 }
 
+.grid__cuatro:hover{
+    transform: scale(1.1);
+}
+
 .grid__cinco {
     grid-area: cinco;
     display:flex;
     background-image: url("../recursos/los_reyunos.jpg");
+}
+
+.grid__cinco:hover{
+    transform: scale(1.1);
 }
 
 .grid__seis {
@@ -162,10 +186,18 @@ ul {
     background-image: url("../recursos/rosedal.jpg");
 }
 
+.grid__seis:hover{
+    transform: scale(1.1);
+}
+
 .grid__siete {
     grid-area: siete;
     display:flex;
     background-image: url("../recursos/dique_potrerillos.jpg");
+}
+
+.grid__siete:hover{
+    transform: scale(1.1);
 }
 
 .grid__ocho {
@@ -174,16 +206,28 @@ ul {
     background-image: url("../recursos/villavicencio.jpg");
 }
 
+.grid__ocho:hover{
+    transform: scale(1.1);
+}
+
 .grid__nueve {
     grid-area: nueve;
     display:flex;
     background-image: url("../recursos/nina_encantada.jpg");
 }
 
+.grid__nueve:hover{
+    transform: scale(1.1);
+}
+
 .grid__diez {
     grid-area: diez;
     display:flex;
     background-image: url("../recursos/uspallata.jpg");
+}
+
+.grid__diez:hover{
+    transform: scale(1.1);
 }
 
 .grid__once {
@@ -193,11 +237,19 @@ ul {
     background-image: url("../recursos/aguas_cacheuta.jpg");
 }
 
+.grid__once:hover{
+    transform: scale(1.1);
+}
+
 .grid__doce {
     grid-area: doce;
     display:flex;
     background-size: contain; 
     background-image: url("../recursos/llancanelo.jpg");
+}
+
+.grid__doce:hover{
+    transform: scale(1.1);
 }
 
 span {
