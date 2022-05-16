@@ -209,8 +209,12 @@ footer {
     flex-direction: column;
     align-items: center;  
     padding: 1rem;
-    background-color:#bc6d4f;
+    /* background-color:#bc6d4f;  */
     color:#500805;
+}
+
+.gradiente {
+    background-image: linear-gradient(to bottom, #bc6d4f, #bc6e4f70);
 }
 
 .footer__redes {
