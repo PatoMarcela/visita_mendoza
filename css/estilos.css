@@ -18,7 +18,7 @@
 main {
     background-color: #500805;
 } 
-
+/* 
 .grid__container__index {
     display:grid;
     grid-template-columns: 0.15fr 0.85fr;
@@ -30,12 +30,12 @@ main {
     background-color: #500805;
     color:white;
 }
-
+ */
 header {
     display:flex;
     align-items: center;
     justify-content:flex-end;
-    padding: 1rem;
+    padding: 1rem; 
     background-color: #9d331f;
 }
 
@@ -48,37 +48,42 @@ ul {
     text-decoration: none;    
     font-size: 1rem;
     color: white;  
-    padding-left: 2rem;
+    margin-left: 2rem; 
+    margin-right: 2rem;
 }
 
 .inicio {
-    padding-right: 36rem;
+    margin-right: 26rem;
 }
 
-.grid__titulo {
-    grid-area: titulo;
+.index__titulo {
+    /* grid-area: titulo; */
     display:flex;
+    padding-top: 1rem;
     font-size: 2rem;
     justify-content: center;
+    color: white;
+    background-color: #500805;
 }
-
+/* 
 .grid__imagenes {
     grid-area: imagenes;
     /* display:flex;
-    justify-content: center; */
+    justify-content: center; 
     background-image: url("../recursos/mendoza.jpg");
     background-size: contain;
     background-repeat: no-repeat;
-}
+} */
 
-.grid__texto {
-    grid-area: texto;
+.index__texto {
+    /* grid-area: texto; */
     display:flex;
     justify-content: center;
     text-align: justify;
-    width: 65vw;
-    /* margin:auto; */
+    width: 90vw;
     padding-top: 1rem;
+    margin-left: 4rem;
+    color:white;
 }
 /* 
 .foto {
