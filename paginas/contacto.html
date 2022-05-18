@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel = "stylesheet" href="../css/estilos.css" >
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,7 +24,81 @@
         </nav>            
     </header>
     <main>
-        <section class="principal tahoma">
+        <section>
+            <div class="pagina__titulo">
+                <h1 class="negrita indie">Tu opinión nos interesa</h1>
+            </div>
+        </section>
+        <section class="container">
+            <form>
+                <div class="row mb-3">
+                    <label for="nombre" class="col-sm-2 col-form-label">Nombre</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" placeholder="Ingresa tu nombre" id="nombre">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label for="email" class="col-sm-2 col-form-label">Correo electrónico</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" placeholder="Ingresa tu correo electrónico"id="email">
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="textArea" class="form-label">Sugerencia o comentario</label>
+                    <textarea class="form-control" placeholder="Escribe tu comentario"id="texArea" rows="3"></textarea>
+                </div>
+                <h4>Qué te agradó más de nuestra web?</h4>
+                <!-- <fieldset class="row mb-3">
+                <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
+                <div class="col-sm-10">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                        <label class="form-check-label" for="gridRadios1">
+                        First radio
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                        <label class="form-check-label" for="gridRadios2">
+                        Second radio
+                        </label>
+                    </div>
+                    <div class="form-check disabled">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled>
+                        <label class="form-check-label" for="gridRadios3">
+                        Third disabled radio
+                        </label>
+                    </div>
+                </div>
+                </fieldset> -->
+                <div class="row mb-3">
+                    <div class="col-sm-10 offset-sm-2">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="favoritos">
+                            <label class="form-check-label" for="favoritos">Lugares Favoritos</label>
+                        </div>
+                    </div>
+                    <div class="col-sm-10 offset-sm-2">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="turismo">
+                            <label class="form-check-label" for="turismo">Turismo Aventura</label>
+                        </div>
+                    </div>
+                    <div class="col-sm-10 offset-sm-2">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="caminos">
+                            <label class="form-check-label" for="caminos">Caminos del Vino</label>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary boton tahoma negrita">Enviar</button>
+                <button type="submit" class="btn btn-primary boton tahoma negrita">Limpiar</button>
+                <!-- <div>
+                    <input class="boton tahoma negrita" type="submit" value="Limpiar"/>
+                </div> -->
+            </form>
+        </section>
+        <!-- <section class="principal tahoma">
             <h1 class="principal__titulo__paginas indie">Tu opinión nos interesa</h1>
             <form>
                 <h2 class="principal__titulo__pequeño">Por favor completa los siguientes datos:</h2>
@@ -56,7 +131,7 @@
                     <input class="boton tahoma negrita" type="reset" value="Limpiar"/>
                 </div>
             </form>
-        </section>
+        </section> -->
     </main>
     <footer class="gradiente">
         <div class="footer__redes">
@@ -74,5 +149,6 @@
             <p class="p__footer_disclaimer tahoma">Patricia Palazzo 2.022 - Todos los derechos reservados</p>
         </div>        
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
