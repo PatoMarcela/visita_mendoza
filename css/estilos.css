@@ -15,26 +15,10 @@
     font-weight: bold;
 }
 
-/* main {
+main {
     background-color: #500805;
-}  */
+}  
 
-body {
-    background-color: #500805;
-}
-/* 
-.grid__container__index {
-    display:grid;
-    grid-template-columns: 0.15fr 0.85fr;
-    grid-template-rows: 0.25fr 3fr 1fr;     
-    grid-template-areas: "titulo titulo"   
-                        ".. imagenes"
-                        ".. texto";      
-    padding: 1rem;
-    background-color: #500805;
-    color:white;
-}
- */
 header {
     display:flex;
     align-items: center;
@@ -44,7 +28,7 @@ header {
 }
 
 ul {
-    display:flex;
+    display:flex; 
     list-style-type: none;
     margin:auto;
 }
@@ -58,34 +42,22 @@ ul {
 }
 
 .navegacion__opcion:hover{
-    color:white;
+    color:#500805;
 }
 
 .inicio {
     margin-right: 26rem;
 } 
 
-.index__titulo {
-    /* grid-area: titulo; */
+.pagina__titulo {
     display:flex;
     padding-top: 1rem;
     font-size: 2rem;
     justify-content: center;
     color: white;
-    background-color: #500805;
 }
-/* 
-.grid__imagenes {
-    grid-area: imagenes;
-    /* display:flex;
-    justify-content: center; 
-    background-image: url("../recursos/mendoza.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-} */
 
 .index__texto {
-    /* grid-area: texto; */
     display:flex;
     justify-content: center;
     text-align: justify;
@@ -94,32 +66,28 @@ ul {
     margin-left: 4rem;
     color:white;
 }
-/* 
-.foto {
-    border: 4px groove #9d331f;
-} */
 
 .grid__container__favoritos {
     display:grid;
-    grid-template-columns: 1.25fr 0.75fr 1fr;
-    grid-template-rows: 2fr repeat(15, 5fr); 
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1.5fr repeat(15, 5fr); 
     grid-template-areas: 
-        "titulof titulof titulof"   
-        "uno uno dos"
-        "uno uno dos"
-        "tres tres dos"
-        "tres tres cuatro"
-        "cinco .. cuatro"
-        "cinco seis seis"
-        "siete seis seis"
-        "siete ocho ocho"
-        ".. ocho ocho"
-        "nueve nueve .."
-        "nueve nueve .."
-        "diez once once"
-        "diez once once"
-        "doce doce .."    
-        "doce doce ..";  
+        "titulof titulof titulof titulof titulof titulof"
+        "uno uno uno uno dos dos"
+        "uno uno uno uno dos dos"
+        "tres tres tres tres dos dos"
+        "tres tres tres tres dos dos"
+        "cuatro cuatro cuatro cinco cinco cinco"
+        "cuatro cuatro cuatro cinco cinco cinco"
+        "seis seis seis seis siete siete"
+        "seis seis seis seis siete siete"
+        "seis seis seis seis ocho ocho"
+        "seis seis seis seis ocho ocho "
+        "nueve nueve nueve diez diez diez"
+        "nueve nueve nueve diez diez diez"
+        "once once once doce doce doce"
+        "once once once doce doce doce "    
+        "once once once doce doce doce";  
     gap: 15px;
     padding: 2rem;
     background-color: #500805;
@@ -139,9 +107,9 @@ ul {
     grid-area: titulof;
     display:flex;
     justify-content: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: white;
-}
+} 
 
 .grid__uno {
     grid-area: uno;
@@ -176,7 +144,7 @@ ul {
 .grid__cuatro {
     grid-area: cuatro;
     display:flex;
-    background-image: url("../recursos/fuente_continentes.jpg");
+    background-image: url("../recursos/fuente.jpg");
 }
 
 .grid__cuatro:hover{
@@ -186,7 +154,7 @@ ul {
 .grid__cinco {
     grid-area: cinco;
     display:flex;
-    background-image: url("../recursos/los_reyunos.jpg");
+    background-image: url("../recursos/rosedal.jpg");
 }
 
 .grid__cinco:hover{
@@ -196,8 +164,8 @@ ul {
 .grid__seis {
     grid-area: seis;
     display:flex;
-    background-size: contain;
-    background-image: url("../recursos/rosedal.jpg");
+    /* background-size: contain; */
+    background-image: url("../recursos/dique_potrerillos.jpg");
 }
 
 .grid__seis:hover{
@@ -207,7 +175,7 @@ ul {
 .grid__siete {
     grid-area: siete;
     display:flex;
-    background-image: url("../recursos/dique_potrerillos.jpg");
+    background-image: url("../recursos/uspallata.jpg");
 }
 
 .grid__siete:hover{
@@ -217,7 +185,7 @@ ul {
 .grid__ocho {
     grid-area: ocho;
     display:flex;
-    background-image: url("../recursos/villavicencio.jpg");
+    background-image: url("../recursos/nina_encantada.jpg");
 }
 
 .grid__ocho:hover{
@@ -227,7 +195,7 @@ ul {
 .grid__nueve {
     grid-area: nueve;
     display:flex;
-    background-image: url("../recursos/nina_encantada.jpg");
+    background-image: url("../recursos/los_reyunos.jpg");
 }
 
 .grid__nueve:hover{
@@ -237,7 +205,7 @@ ul {
 .grid__diez {
     grid-area: diez;
     display:flex;
-    background-image: url("../recursos/uspallata.jpg");
+    background-image: url("../recursos/aguas_cacheuta.jpg");
 }
 
 .grid__diez:hover{
@@ -247,8 +215,8 @@ ul {
 .grid__once {
     grid-area: once;
     display:flex;
-    background-size: contain;  
-    background-image: url("../recursos/aguas_cacheuta.jpg");
+    /* background-size: contain;   */
+    background-image: url("../recursos/llancanelo.jpg");
 }
 
 .grid__once:hover{
@@ -258,8 +226,8 @@ ul {
 .grid__doce {
     grid-area: doce;
     display:flex;
-    background-size: contain; 
-    background-image: url("../recursos/llancanelo.jpg");
+    /* background-size: contain;  */
+    background-image: url("../recursos/villavicencio.jpg");
 }
 
 .grid__doce:hover{
@@ -275,15 +243,16 @@ footer {
     flex-direction: column;
     align-items: center;  
     padding: 1rem;
-    /* background-color:#bc6d4f;  */
     color:#500805;
 }
 
 .gradiente {
-    background-image: linear-gradient(to bottom,#bc6d4f, white);
+    background-image: linear-gradient(to bottom,#bc6d4f, #bc6e4f62);
 }
 
 .footer__redes {
+    display:flex;
+    justify-content: center;
     height: 20vh;
 }
 
@@ -294,68 +263,21 @@ footer {
 }
 
 .footer__enlaces {
+    display:flex;
     height: 10vh;
 }
 
 .footer__enlaces__opcion {
     text-decoration: none;    
     font-size: 1rem;
-    color:#500805; 
+    color:#500805;  
     margin: 1rem;
 }
 
 .footer__enlaces__opcion:hover{
-    color:#500805;
+    color:#9d331f;
 }
-
-.footer__disclaimer {
-    display:fex;
-    align-items: flex-end;
-    /* color:#500805; */
-    /* margin: 20px;
-    text-align: right;
-    font-size: 12px; */
-}
-
-.principal {
-    padding: 20px;
-    color: white;
-    font-size: 12px;
-}
-
-.principal__titulo {
-    font-size: 60px;
-    text-align: center;    
-}
-
-.principal__titulo__paginas {
-    font-size: 36px;
-    text-align: center;    
-}
-
-.principal__titulo__pequeño {
-    text-align: center;
-    font-size: 20px;
-}
-
-.principal__imagenes {
-    width: 1020px;
-    height: 580px;
-}
-
-.principal__texto {
-    width: 650px;
-    height: 400px;
-    font-size: 12px;
-    line-height: 2;
-    text-align: justify;
-}
-
-/* footer {
-    background-color:#bc6d4f;
-    padding: 20px;  
-}
-
+/* 
 .footer__redes{
     width: 50px;
     height: 50px;
@@ -366,21 +288,13 @@ footer {
     text-decoration: none;    
     font-size: 16px;
     color:#500805;  
-}
+} */
 
 .footer__disclaimer{
+    display:flex;
     color:#500805;
-    margin: 20px;
+    margin: 1rem;
     text-align: right;
-    font-size: 12px;
-}
- */
-.favoritosImagenes {
-    border: 4px groove #bc6d4f;
-    margin: 20px;
-}
-
-.favoritosTexto{
     font-size: 12px;
 }
 
@@ -395,7 +309,7 @@ footer {
         "t_tres t_tres t_tres texto_tres"
         "t_cuatro t_cuatro t_cuatro texto_cuatro";
     gap: 5px; 
-    padding: 5rem;
+    padding: 5rem; 
     color:#500805;
     background-color: #500805;
 }
@@ -424,7 +338,7 @@ footer {
     display: flex;
     color: #500805;
     text-align: justify;
-    padding: 1rem;
+    padding: 1rem; 
 }
 
 .grid__turismo__dos {
@@ -488,17 +402,18 @@ footer {
 .grid__container__camino {
     display: grid;
     grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
-    grid-template-rows: 0.25fr 1.5fr 1.5fr 0.25fr 1fr 1fr 0.25fr; 
+    grid-template-rows: 0.25fr 0.75fr 0.25fr 0.75fr 0.25fr 0.25fr 0.75fr 0.75fr 0.25fr; 
     grid-template-areas: 
         "tituloc tituloc tituloc tituloc"   
         ".. video_uno video_uno .."
+        ".. texto_uno texto_uno .."
         ".. video_dos video_dos .."
+        ".. texto_dos texto_dos .."
         "subtitulo subtitulo subtitulo subtitulo"
-        ".. fotos_dos fotos_dos .."
-        ".. fotos_cuatro fotos_cuatro .."
+        ".. foto_uno foto_dos .."
+        ".. foto_tres foto_cuatro .."
         ".. texto_enot texto_enot ..";
     gap: 5px; 
-    /* padding: 5rem; */
     color: white;
     background-color: #500805;
 }
@@ -515,46 +430,64 @@ footer {
 .grid__video__uno {
     grid-area: video_uno;
     padding-left: 2rem;
-    text-align: justify;
 }
 
 .grid__video__dos {
     grid-area: video_dos;
     padding-left: 2rem;
+}
+
+.texto__video__uno {
+    grid-area:texto_uno;
     text-align: justify;
+    padding: 2rem;
+}
+
+.texto__video__dos {
+    grid-area:texto_dos;
+    text-align: justify;
+    padding: 2rem;
 }
 
 .grid__enoturismo {
     grid-area: subtitulo;
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 1rem;
     color: #9d331f; 
 }
 
 .grid__fotos__camino__uno {
-    grid-area: fotos_dos;
+    grid-area: foto_uno;
     display:flex;
-    width: 40vw;
+    background-image: url("../recursos/vinedo_excursion.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .grid__fotos__camino__dos {
-    grid-area: fotos_cuatro;
+    grid-area: foto_dos;
     display:flex;
-    width: 40vw;
+    background-image: url("../recursos/bodega.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
-/* 
-.tarjetaTurismo {
-    background-color: #bc6d4f;
-    padding:10px;
-    margin-top: 10px;
-    margin: 30px;
-    width: 1200px;
-    height: 640px;
-    border:4px groove #9d331f;
-    color:#500805;
+.grid__fotos__camino__tres {
+    grid-area: foto_tres;
+    display:flex;
+    background-image: url("../recursos/comida_vino.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
 }
- */
+
+.grid__fotos__camino__cuatro {
+    grid-area: foto_cuatro;
+    display: flex;
+    background-image: url("../recursos/cata_vinos.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
 .video {
     border:4px groove #bc6d4f;
     margin-bottom: 20px;
@@ -563,27 +496,11 @@ footer {
     height: 60vh;
 }
 
-.enoturismo__imagen {
-    width: 34vw; 
-/*     height: 30vh;
- */
-    /* width: 540px;
-    height: 300px; */
-}
-
 .grid__enoturismo__texto {
     grid-area: texto_enot;
     text-align: justify;
-}
-
-.pagina__titulo {
-    /* grid-area: titulo; */
-    display:flex;
-    padding-top: 1rem;
-    font-size: 2rem;
-    justify-content: center;
-    color: white;
-    background-color: #500805;
+    padding-right: 1rem;
+    margin-bottom: 1rem;
 }
 
 form {
@@ -591,46 +508,27 @@ form {
     padding: 2rem;
     border: 6px groove white; 
     color:#500805;
-    margin:1rem; 
-}
-/* 
-input {
-    margin: 20px;
 }
 
-label {
-    padding: 20px;
-    margin-top: 20px;
-}
-
-.form__pregunta{
-    margin-top: 40px;
-    margin-bottom: 30px;
-}
- */
 .boton {
     color: #500805;
     font-size: 1rem;
     background-color: white;
+    border: white;
 } 
+
+.boton:hover {
+    background-color: #9d331f;
+}
 
 @media (min-width:541px) and (max-width:720px) {
     
     .grid__titulo__favoritos { 
         /* grid-area: titulof; */
         font-size: 1rem; 
-    /*  color: white; */
     } 
     
-    /* header {
-        display:flex;
-        height: 12vh;
-        padding: 1rem;
-        /* background-color: #9d331f; 
-    } */
-
     nav {
-        /* display: flex; */
         width: 100vw; 
     }
 
@@ -640,34 +538,20 @@ label {
         justify-content:space-between;
         list-style-type: none;
         height: 12vh;
-        /* margin-left: 1rem; */
     }
 
     .navegacion__opcion {
-    /*  text-decoration: none; */   
-        /* font-size: 1rem; */
-       /*  color: white;   */
         margin-left: 1rem; 
     }
-        
-    
-    
-    .index__texto {
-         /* grid-area: texto; */
-        /* display:flex;
-        justify-content: center;
-        text-align: justify;
-        width: 90vw;
-        padding-top: 1rem; */
+
+    .index__texto {        
         margin-left: 2rem;
-        /* color:white; */
     }
 
     .grid__titulo {
         /* grid-area: titulo; */
         font-size: 1rem;
-        /* color: white; */
-    } 
+        } 
     /* 
     .grid__container__index {
         display:grid;
@@ -681,7 +565,7 @@ label {
         color:white;
         padding-left: 4rem;
     } */
-    
+    /* 
     .grid__imagenes {
         grid-area: imagenes;
         display:flex;
@@ -690,8 +574,8 @@ label {
         background-repeat: no-repeat;
         background-size: contain;
         height: 25vh;
-        /* padding-left: 3rem;  */
-    }
+        /* padding-left: 3rem; } */
+    
 
     .grid__texto {
         grid-area: texto;
@@ -739,124 +623,57 @@ label {
         margin-right: 0.5rem;
         font-size: 0.75rem;
     }
-
+    
     footer {
-        height: 30vh;
+        height: 40vh;
     }
 
     .footer__redes {
-        height: 8vh;
+        height: 12vh;
     }
     
-    .footer__imagenes {
-        width: 50px;
-        height: 50px;
-        margin: 1rem;
-    }
-
     .footer__enlaces {
-        height: 30vh;
+        flex-direction: column;
+        height: 20vh;
     }
 
     .footer__enlaces__opcion {
         display:flex;
-        flex-direction: column; 
-        text-decoration: none;    
-        font-size: 1rem;
-        color:#500805;
-    }
-    
-    .centrado {
-        text-align: center;
+        justify-content: center;
     }
     
     .footer__disclaimer {
-        display: flex;
-        margin-top: 1rem;
-    }   
+        margin-top: 2rem;
+        height: 8vw;
+    }
 }
 
 @media (min-width:320px) and (max-width:540px) {
     
     header {
-        /* display:flex; */
-        height: 18vh;
+        Height: 18vh;
         padding: 2rem;
-        /* background-color: #9d331f; */
     }
 
     nav {
-        /* display: flex; */
         width: 100vw;
     }
 
     ul {
-        /* display:flex; */
         flex-direction: column;
         align-content: center;
-        padding-top: 1.5rem;
-        margin:auto;
-        /* list-style-type: none; */
+        justify-content: space-around;
+        padding-top: 1rem;
+        padding-left: 2rem;
         height: 18vh; 
     }
 
     .navegacion__opcion {
-        /* text-decoration: none;    
-        font-size: 1rem;
-        color: white;   */
         margin-left: 1rem;
     }
-    /* 
-    .inicio{
-        margin-right: 0rem;
-    }  */
-
-    .grid__titulo {
-        /* grid-area: titulo; */
-        font-size: 1rem;
-        /* color: white; */
-    } 
-    /* 
-    .grid__container__index {
-        display:grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.1fr 0.5fr 0.25fr;    
-        grid-template-areas: "titulo"   
-                            "imagenes"
-                            "texto";    
-        gap:5px;
-        background-color: #500805;
-        color:white; 
-    }
-    .grid__imagenes {
-        grid-area: imagenes;
-        /* display:flex; */
-        /* background-image: url("../recursos/mendoza.jpg");
-        background-size: contain;
-        background-repeat: no-repeat;
-        height: 20vh; 
-        margin-left: 2rem;
-    }  */ 
-/* 
-    .grid__texto {
-        grid-area: texto;
-        display:flex;
-        justify-content: center;
-        width: 75vw;
-        /* margin:auto; 
-        padding-top: 1rem;
-        margin-left: 2rem;
-    }   */ 
     
     .index__texto {
-        /* grid-area: texto; */
-        /* display:flex;
-        justify-content: center;
-        text-align: justify;
-        width: 90vw;
-        padding-top: 1rem; */
         margin-left: 1rem;
-       /* color:white; */
     }
 
     .grid__titulo__favoritos {
@@ -868,7 +685,7 @@ label {
     .grid__container__favoritos {
         display:grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 0.25fr 5fr 10fr 5fr 5fr 5fr 5fr 5fr 5fr 5fr 5fr 5fr 5fr; 
+        grid-template-rows: 0.25fr 5fr 7fr 5fr 5fr 5fr 5fr 5fr 5fr 5fr 5fr 5fr 5fr; 
         grid-template-areas: 
             "titulof"   
             "uno"
@@ -890,19 +707,19 @@ label {
     }
     
     .grid__dos{
-        /* height: 20vh; */
+        /* height: 20vh;  */
+        background-size: contain; 
+    }
+    
+    .grid__siete {
+        /* height: 20vh;  */
         background-size: contain;
     }
     
-    .grid__cuatro {
-        /* height: 20vh; */
+    .grid__once {
+       /*  height: 20vh;  */
         background-size: contain;
-    }
-    
-    .grid__cinco {
-        /* height: 20vh; */
-        background-size: contain;
-    }
+    } 
 
     span {
         margin-left: 0.5rem;
@@ -918,31 +735,19 @@ label {
         height: 12vh;
     }
     
-    .footer__imagenes {
-        /* width: 50px;
-        height: 50px; */
-        margin: 1rem;
-    }
-
     .footer__enlaces {
+        flex-direction: column;
         height: 20vh;
     }
 
     .footer__enlaces__opcion {
         display:flex;
-        flex-direction: column; 
-        /* text-decoration: none;    
-        font-size: 1rem; */
-        color:#500805;
-    }
-    
-    .centrado {
-        text-align: center;
+        justify-content: center;
     }
     
     .footer__disclaimer {
-        /* display: flex; */
         margin-top: 2rem;
-        height: 5vw;
+        height: 8vw;
     }
+
 }
